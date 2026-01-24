@@ -1,10 +1,42 @@
-# c-from-scratch
+# C From Scratch
 
 **Learn to build safety-critical systems in C.**
 
 Not "Hello World". Real kernels. Mathematical rigour. Zero dependencies.
 
-> *"Math → Structs → Code"*
+> *"Math → Struct → Code → Test"*
+
+---
+
+## 📘 The Book
+
+<p align="center">
+  <img src="./assets/c-from-scratch-cover.png" alt="C From Scratch Book Cover" width="400">
+</p>
+
+<p align="center">
+  <strong><a href="https://leanpub.com/c-from-scratch">C From Scratch: Learn Safety-Critical C the Right Way</a></strong>
+</p>
+
+The complete guide to writing C that doesn't just work — it *provably* works.
+
+**What you'll learn:**
+- The MATH → STRUCT → CODE → TEST methodology
+- Fixed-width integers and why `int` kills rockets (Ariane 5)
+- Contracts, preconditions, and invariants
+- State machines that can't enter invalid states
+- Memory safety without garbage collection
+- The path from learning to DO-178C / IEC 62304 / ISO 26262 certification
+
+**What you won't find:**
+- "It works on my machine"
+- Undefined behaviour swept under the rug
+- `malloc` in safety-critical code
+- Tutorials that teach bad habits
+
+📖 **[Buy the book on Leanpub →](https://leanpub.com/c-from-scratch)**
+
+---
 
 ## Philosophy
 
@@ -30,6 +62,8 @@ This course teaches you to write code that *provably* works.
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+---
 
 ## The Seven Foundation Modules
 
@@ -79,37 +113,6 @@ Plus: [Integration Example](./projects/integration/) — All modules working tog
 
 ---
 
-## Module Overview
-
-### Modules 1-4: The Sensors
-
-| Module | Question | Key Insight |
-|--------|----------|-------------|
-| **Pulse** | Is it alive? | Existence must be proven continuously |
-| **Baseline** | Is it normal? | "Normal" must be learned, not assumed |
-| **Timing** | Is it regular? | Jitter indicates system stress |
-| **Drift** | Is it trending? | "Temperature is normal but rising too fast" |
-
-### Module 5: The Judge
-
-**Consensus** — Triple Modular Redundancy voting.
-
-> *"With THREE clocks, we can outvote the liar."*
-
-### Module 6: The Buffer
-
-**Pressure** — Bounded queue with backpressure.
-
-> *"Only bounded queues let you choose deliberately."*
-
-### Module 7: The Captain
-
-**Mode** — System orchestrator with permissions matrix.
-
-> *"Sensors report. The Captain decides."*
-
----
-
 ## Core Properties
 
 Every module is:
@@ -126,7 +129,7 @@ Every module is:
 
 ```bash
 # Clone
-git clone https://github.com/williamofai/c-from-scratch.git
+git clone https://github.com/SpeyTech/c-from-scratch.git
 cd c-from-scratch
 
 # Try any module
@@ -153,6 +156,18 @@ See [SPEC.md](./SPEC.md) for the complete framework specification:
 
 ---
 
+## Related Projects
+
+This course is part of the **SpeyTech** ecosystem for deterministic, certifiable systems:
+
+| Project | Description |
+|---------|-------------|
+| [Fixed-Point Fundamentals](https://speytech.com/open-source/fixed-point-fundamentals/) | Free course on fixed-point arithmetic |
+| [certifiable-*](https://speytech.com/open-source/) | Deterministic ML pipeline with cryptographic verification |
+| [C-Sentinel](https://speytech.com/open-source/c-sentinel/) | Semantic security monitoring in pure C |
+
+---
+
 ## Who This Is For
 
 - Developers building safety-critical software
@@ -172,7 +187,7 @@ See [SPEC.md](./SPEC.md) for the complete framework specification:
 
 **William Murray** — 30 years UNIX systems engineering
 
-- GitHub: [@williamofai](https://github.com/williamofai)
+- GitHub: [@SpeyTech](https://github.com/SpeyTech)
 - LinkedIn: [William Murray](https://www.linkedin.com/in/williammurray1967/)
 - Website: [speytech.com](https://speytech.com)
 
@@ -182,4 +197,12 @@ MIT — See [LICENSE](./LICENSE)
 
 ---
 
-> *"Sensors report. The Captain decides."*
+<p align="center">
+  <em>"Sensors report. The Captain decides."</em>
+</p>
+
+<p align="center">
+  <a href="https://leanpub.com/c-from-scratch">📘 Buy the Book</a> · 
+  <a href="https://speytech.com">🌐 SpeyTech</a> · 
+  <a href="https://github.com/SpeyTech">💻 GitHub</a>
+</p>
